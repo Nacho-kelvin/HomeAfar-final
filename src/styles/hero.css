@@ -1,0 +1,16 @@
+/* Page heroes, the About banner and its intro */
+.hero{position:relative;isolation:isolate;min-height:62vh;min-height:62svh;display:flex;align-items:flex-end;padding:clamp(72px,12vw,120px) 0 clamp(36px,6vw,64px);color:#fff;overflow:hidden;background:var(--brown-deep)}
+.hero picture,.hero-img{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero-img{object-fit:cover;object-position:var(--pos,center)}
+@media(max-width:699px){.hero-img{object-position:var(--pos-m,var(--pos,center))}}
+.hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(36,21,16,.15),rgba(36,21,16,.45) 45%,rgba(36,21,16,.88))}
+.hero h1{color:#fff;max-width:14em}.lead{max-width:36em;font-size:1.15rem}
+@media(min-width:1000px){.hero{min-height:68vh;min-height:68svh}}
+@media(max-height:480px) and (orientation:landscape){.hero{min-height:auto;padding:56px 0 32px}}
+
+/* About: the artwork carries its own "About Us" lettering, so it is shown whole (16:9, never cropped) above the heading */
+.about-intro{padding-top:clamp(20px,4vw,48px);padding-bottom:clamp(8px,2vw,24px)}
+.banner{border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 44px rgba(36,21,16,.22);background:var(--brown-deep)}
+.banner img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.about-head{padding-top:clamp(28px,5vw,48px);max-width:46rem}
+.about-head h1{margin-bottom:.35em}.about-head .lead{margin:0;font-size:1.25rem}
