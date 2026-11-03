@@ -4,7 +4,7 @@
 const P = (dir, b, w, alt, pos) => ({ dir, b, w, alt, pos })
 const REAL = 'photos'
 const ILL = 'illustrative'
-const AUTHENTIC_HOME_PHOTO = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-11-03%20at%2003.51.28-wrRfeMETomeQP5cgjV7INz69T2qZ2X.jpeg'
+const AUTHENTIC_HOME_PHOTO = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-10-24%20at%2009.23.59%20%281%29-RMH7P4O4RxQT7aUJIkv1JMpYqI8PEV.jpeg'
 
 export const PH = {
   // Real HomeAFar photographs
