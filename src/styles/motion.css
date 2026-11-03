@@ -1,0 +1,7 @@
+/* Back-to-top button, reveal animation, reduced motion, print and very small screens */
+.totop{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:0;background:var(--brown-deep);color:var(--gold);font:700 1.4rem var(--font);cursor:pointer;box-shadow:0 8px 22px rgba(36,21,16,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s}
+.totop.show{opacity:1;visibility:visible;transform:none}.totop:hover{background:var(--gold-deep);color:#fff}
+.js .sec{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.js .sec.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .sec{opacity:1;transform:none;transition:none}a.tile:hover,a.tile.media:hover img{transform:none}.tile.media img{transition:none}}
+@media print{.js .sec{opacity:1;transform:none}.header,.totop,.menu{display:none!important}}
+@media(max-width:360px){h1{font-size:1.85rem}.brand span{font-size:1.1rem}.tile{padding:20px}}
