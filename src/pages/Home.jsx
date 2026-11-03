@@ -6,7 +6,7 @@ import { usePage } from '../hooks/usePage.js'
 export default function Home() {
   usePage('Home', 'HomeAFar connects Africans across borders through community, cultural exchange, storytelling, events and practical opportunities.')
   return (<>
-    <Hero title="Home is wherever we find Each Other." lead="HomeAFar is an African-founded community and impact initiative connecting Africans across borders — starting from African experiences in Romania and Eastern Europe." img="desk" mobile="traveler">
+    <Hero title="Home is wherever we find Each Other." lead="HomeAFar is an African-founded community and impact initiative connecting Africans across borders — starting from African experiences in Romania and Eastern Europe." img="authenticHome" mobile="authenticHome" pos="center 64%" mobilePos="center 68%">
       <div className="btn-row"><Link className="btn" to="/get-involved">Get involved</Link><Link className="btn ghost light" to="/about">Our story</Link></div>
     </Hero>
     <Stats />

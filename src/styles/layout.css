@@ -1,5 +1,7 @@
 /* Page width, section bands, grids and splits */
-.wrap{width:min(var(--w),100% - 2*max(var(--pad),env(safe-area-inset-left,0px),env(safe-area-inset-right,0px)));margin-inline:auto}
+.wrap{width:min(var(--w),100% - 2*max(var(--pad),env(safe-area-inset-left,0px),env(safe-area-inset-right,0px)));margin-inline:auto;min-width:0}
+img,video,svg{max-width:100%}
+@media(max-width:699px){body{overflow-x:hidden}.wrap{width:calc(100% - 2 * max(var(--pad), env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px)))}}
 .sec{padding-block:var(--sec);content-visibility:auto;contain-intrinsic-size:600px}
 .sec>:first-child{margin-top:0}.sec>:last-child{margin-bottom:0}
 
