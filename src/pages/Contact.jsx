@@ -4,7 +4,7 @@ import { usePage } from '../hooks/usePage.js'
 
 export default function Contact() {
   usePage('Contact', 'Contact HomeAFar by form, email, Instagram or Facebook.')
-  return (<><Hero title="Contact" lead="We would love to hear from you." img="team" mobile="traveler" pos="center 40%" />
+  return (<><Hero title="Contact" lead="We would love to hear from you." img="handsets" mobile="handsets" pos="center" />
     <section className="wrap sec"><div className="split top"><div>
       <Figure name="handsets" sizes="(min-width:800px) 50vw, 92vw" caption="Illustrative image" className="contact-fig" />
       <div className="contact-list">

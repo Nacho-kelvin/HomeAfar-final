@@ -4,6 +4,7 @@
 const P = (dir, b, w, alt, pos) => ({ dir, b, w, alt, pos })
 const REAL = 'photos'
 const ILL = 'illustrative'
+const AUTHENTIC_HOME_PHOTO = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-11-03%20at%2003.51.28-wrRfeMETomeQP5cgjV7INz69T2qZ2X.jpeg'
 
 export const PH = {
   // Real HomeAFar photographs
@@ -16,6 +17,9 @@ export const PH = {
   poster: P(REAL, 'passport-picnic-invitation', [480, 800], 'Passport Picnic invitation: 30 August 2026, 2 to 6 pm, Tineretului Park, Bucharest'),
   portrait: P(REAL, 'community-portrait', [480, 800, 1200], 'A HomeAFar community member in a portrait'),
   team: P(REAL, 'community-indoors', [480, 800, 1200, 1600], 'Members of the HomeAFar community seated together indoors'),
+
+  // Authentic community photo supplied for the homepage hero.
+  authenticHome: { src: AUTHENTIC_HOME_PHOTO, w: [480, 800, 1200], alt: 'HomeAFar community members smiling together outdoors', pos: 'center' },
 
   // Illustrative images: heroes and page features
   desk: P(ILL, 'passport-desk-kente', [480, 800, 1168], 'A desk with a kente cloth, beaded jewellery, a carved mask, a passport and a cup of coffee'),
@@ -47,5 +51,5 @@ export const PH = {
 
 export const BRAND = { logo: '/images/brand/homeafar-logo.png' }
 
-export const imgSrc = (p, w) => `/images/${p.dir}/${p.b}-${w}.webp`
-export const imgSrcSet = (p) => p.w.map((w) => `${imgSrc(p, w)} ${w}w`).join(', ')
+export const imgSrc = (p, w) => p.src || `/images/${p.dir}/${p.b}-${w}.webp`
+export const imgSrcSet = (p) => p.src ? `${p.src} 1200w` : p.w.map((w) => `${imgSrc(p, w)} ${w}w`).join(', ')
